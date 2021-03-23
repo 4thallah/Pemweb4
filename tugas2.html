@@ -1,0 +1,31 @@
+<html>
+<head>	<!--Tag sebagai identifier bahwa script yang digunakan adalah jquery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		// Script jQuery untuk mengubah warna box menjadi warna sesuai perintah dengan mengklik 2x
+		$(document).ready(function(){
+			$("div").dblclick(function(){
+				$(this).css({background:"red"});
+			});
+		});
+	</script> <!--Script CSS untuk membuat box dan format tag paragraf-->
+	<style type="text/css">
+		div{
+			width: 80px;
+			height: 80px;
+			background-color: yellow;
+			float: left;
+			margin: 15px;
+		}
+		p{
+			padding-left: 75px;
+		}
+	</style>
+</head>
+<body>	<!--Menampilkan tulisan yang apabila di klik akan berubah warna sesuai perintah-->
+	<p>klik 2x pada kotak untuk merubah warnanya</p>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body></html>
